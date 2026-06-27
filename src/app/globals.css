@@ -17,6 +17,18 @@
   --font-mono: var(--font-mono), 'IBM Plex Mono', ui-monospace, monospace;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #09090b;
+    --color-fg: #fafafa;
+    --color-muted: #a1a1aa;
+    --color-edge: rgba(255, 255, 255, 0.1);
+    --color-border: rgba(255, 255, 255, 0.2);
+    --color-card: rgba(255, 255, 255, 0.05);
+    --color-card-hover: rgba(255, 255, 255, 0.1);
+  }
+}
+
 /* ── Base ── */
 html {
   scroll-behavior: smooth;
@@ -101,7 +113,7 @@ html, body {
 
 /* ── Cover pattern ── */
 .cover-pattern {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: color-mix(in srgb, var(--color-bg) 85%, transparent);
   background-image: radial-gradient(var(--color-edge) 1px, transparent 0);
   background-size: 10px 10px;
   background-position: center;
