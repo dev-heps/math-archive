@@ -1,0 +1,46 @@
+export const metadata = {
+  title: 'Math Archive - Dongwoo Lee',
+}
+
+export default function Layout({ children }) {
+  return (
+    <div className="min-h-screen bg-bg text-fg font-sans">
+      <header className="sticky top-0 z-50 bg-bg/80 backdrop-blur-md px-2 pt-2 border-b border-edge">
+        <div className="mx-auto flex h-12 max-w-3xl items-center justify-between gap-4 px-4">
+          <nav className="flex items-center gap-5">
+            <a href="/" className="font-mono text-sm font-medium text-fg">Math Archive</a>
+            <a href="#" className="font-mono text-sm font-medium text-muted hover:text-fg transition-colors">Studies</a>
+            <a href="#" className="font-mono text-sm font-medium text-muted hover:text-fg transition-colors">Formalization</a>
+          </nav>
+        </div>
+      </header>
+      <main className="mx-auto max-w-3xl px-4 py-12 prose prose-zinc dark:prose-invert">
+        {children}
+      </main>
+    </div>
+  )
+}
+
+# Math Archive 
+
+Welcome to my math archive! Here I document my notes, studies, and formalizations.
+
+## Sample Math Equations
+
+Here is an inline equation: $e^{i\pi} + 1 = 0$.
+
+And here is a block equation, the Navier-Stokes equation:
+
+$$
+\rho \left( \frac{\partial \mathbf{v}}{\partial t} + \mathbf{v} \cdot \nabla \mathbf{v} \right) = -\nabla p + \mu \nabla^2 \mathbf{v} + \mathbf{f}
+$$
+
+### Schrödinger Equation
+
+The time-dependent Schrödinger equation:
+
+$$
+i\hbar \frac{\partial}{\partial t} \Psi(\mathbf{r},t) = \left [ \frac{-\hbar^2}{2m}\nabla^2 + V(\mathbf{r},t)\right ] \Psi(\mathbf{r},t)
+$$
+
+These equations should render beautifully with `KaTeX`.
