@@ -5,6 +5,7 @@ const nextConfig = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
   output: 'export',
   basePath: '/math-archive',
+  trailingSlash: true,
   images: {
     unoptimized: true,
   },
