@@ -13,8 +13,8 @@
   --color-accent: #3b82f6;
 
   /* ── Typography ── */
-  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
-  --font-mono: var(--font-mono), 'IBM Plex Mono', ui-monospace, monospace;
+  --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-geist-mono), 'IBM Plex Mono', ui-monospace, monospace;
 }
 
 @media (prefers-color-scheme: dark) {
