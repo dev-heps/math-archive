@@ -1,9 +1,4 @@
 export const kidaesuLectures = [
-  {
-    id: "000",
-    title: "머신러닝 연구자가 기초부터 대학원 수학까지 시리즈의 영상 100여편을 전부 다 보고 남기는 감상평 찐후기",
-    url: "https://youtu.be/S0oqTuropXM?si=WxH596SNzgMSBVKP",
-  },
   { id: "001", title: "집합론 기초 (a)", url: "https://youtu.be/9HUk8zays2E" },
   { id: "002", title: "집합론 기초 (b)", url: "https://youtu.be/k53Sr9Q9NR8" },
   { id: "003", title: "집합론 기초 (c)", url: "https://youtu.be/2gM-Vh8CY8I" },
