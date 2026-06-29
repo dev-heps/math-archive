@@ -1,0 +1,51 @@
+import { LectureIndex } from "../../../components/LectureIndex";
+import { kidaesuLectures } from "../../../data/kidaesuLectures";
+
+export const metadata = {
+  title: 'KiDaeSu 강의 링크',
+}
+
+# KiDaeSu 강의 링크
+
+<div className="kds-hero">
+  <p>
+    조건희 교수님의 <strong>Basics to Grad Math (KiDaeSu)</strong> 시리즈를
+    공부하기 위한 영상 링크 색인이다. 이 페이지는 강의 내용을 요약하는 곳이
+    아니라, 원자료에 빠르게 접근하고 이후 강의별 공부 기록을 연결하기 위한
+    기준 목차로 둔다.
+  </p>
+
+  <div className="kds-meta">
+    <div className="kds-meta-item">
+      <span>Source</span>
+      <strong>
+        <a href="https://sites.google.com/view/enjoyingmath/home/basics-to-grad-math?authuser=0">
+          Official page
+        </a>
+      </strong>
+    </div>
+    <div className="kds-meta-item">
+      <span>Lecturer</span>
+      <strong>조건희 교수님</strong>
+    </div>
+    <div className="kds-meta-item">
+      <span>Range</span>
+      <strong>KDS-000 to KDS-120</strong>
+    </div>
+    <div className="kds-meta-item">
+      <span>Notes</span>
+      <strong>KDS notes 1–120</strong>
+    </div>
+  </div>
+</div>
+
+<LectureIndex lectures={kidaesuLectures} />
+
+## 표기 메모
+
+- `KDS-000`은 본강의가 아니라 시리즈 후기 영상이다.
+- 본강의는 `KDS-001`부터 `KDS-120`까지로 둔다.
+- 일부 강의 제목의 괄호 표기 `(j)`, `(k)`, `(l)` 등은 원자료 제목을 따른다.
+- 이후 강의별 페이지가 만들어지면 이 색인에서 정리글 링크나 개념 태그를 연결한다.
+
+[Back to Studies](/math-archive/studies/)

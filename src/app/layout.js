@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full bg-bg text-fg">
         <div className="min-h-screen">
           <header className="sticky top-0 z-50 bg-bg/80 backdrop-blur-md px-2 pt-2">
-            <div className="mx-auto flex min-h-12 max-w-3xl items-center px-4">
+            <div className="mx-auto flex min-h-12 w-full max-w-6xl items-center px-4 sm:px-6 lg:px-8">
               <nav className="flex flex-wrap items-center gap-x-5 gap-y-2 py-2 font-mono text-sm font-medium" aria-label="Math Archive navigation">
                 <a href="https://dev-heps.github.io/" className="text-muted hover:text-fg transition-colors">Portfolio</a>
                 <Link href="/" className="text-fg">Math Archive</Link>
@@ -40,12 +40,12 @@ export default function RootLayout({ children }) {
               </nav>
             </div>
           </header>
-          <main className="mx-auto max-w-3xl px-4 py-12">
-            <article className="prose prose-zinc max-w-none dark:prose-invert">
+          <main className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+            <article className="math-article prose prose-zinc max-w-none dark:prose-invert">
               {children}
             </article>
           </main>
-          <footer className="mx-auto max-w-3xl px-4 pb-10 text-center font-mono text-xs text-muted">
+          <footer className="mx-auto w-full max-w-6xl px-4 pb-10 text-center font-mono text-xs text-muted sm:px-6 lg:px-8">
             &copy; 2026 Dongwoo Lee. Back to <a href="https://dev-heps.github.io/" className="text-fg hover:underline underline-offset-4">Portfolio</a>.
           </footer>
         </div>
